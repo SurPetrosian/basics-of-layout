@@ -4,7 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Главная</title>
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
   <style>
     body {
       min-height: 100vh;
@@ -22,6 +25,9 @@
     .sidebar a {
       color: white;
     }
+    .sidebar .nav-link.active {
+      background-color: #0d6efd;
+    }
     .content {
       margin-left: 240px;
       padding: 2rem;
@@ -36,19 +42,19 @@
   <!-- Sidebar -->
   <div class="sidebar d-flex flex-column p-3">
     <a href="#" class="d-flex align-items-center mb-3 text-white text-decoration-none fs-4">
-      <strong>🅱 Меню</strong>
+      <i class="bi bi-bootstrap-fill me-2"></i><strong>Меню</strong>
     </a>
     <ul class="nav nav-pills flex-column mb-auto">
       <li class="nav-item">
-        <a href="#" class="nav-link active">Главная</a>
+        <a href="#" class="nav-link active"><i class="bi bi-house-door me-2"></i>Главная</a>
       </li>
-      <li><a href="#" class="nav-link text-white">Категории</a></li>
-      <li><a href="#" class="nav-link text-white">Заказы</a></li>
-      <li><a href="#" class="nav-link text-white">Контакты</a></li>
+      <li><a href="#" class="nav-link text-white"><i class="bi bi-grid me-2"></i>Категории</a></li>
+      <li><a href="#" class="nav-link text-white"><i class="bi bi-bag me-2"></i>Заказы</a></li>
+      <li><a href="#" class="nav-link text-white"><i class="bi bi-telephone me-2"></i>Контакты</a></li>
     </ul>
     <div class="dropdown mt-auto">
       <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" data-bs-toggle="dropdown">
-        <img src="images/IMG_0182.JPG" alt="user" width="32" height="32" class="rounded-circle me-2">
+        <img src="images/258-2582267_circled-user-male-skin-type-1-2-icon-male-user-icon.png" alt="user" width="32" height="32" class="rounded-circle me-2">
         <strong>Пользователь</strong>
       </a>
       <ul class="dropdown-menu dropdown-menu-dark">
@@ -59,11 +65,13 @@
   </div>
 
   <!-- Content -->
-  <div class="content">
-    <h2>Главная</h2>
-    <p>Вы находитесь на сайте, предназначенном для продажи товаров.</p>
+  <div class="content text-center">
+    <div class="d-flex flex-column align-items-center">
+      <h2 class="display-5">Главная</h2>
+      <p class="text-muted">Вы находитесь на сайте, предназначенном для продажи товаров.</p>
+    </div>
 
-    <div class="d-flex flex-wrap gap-3 mt-4">
+    <div class="d-flex flex-wrap justify-content-center gap-3 mt-4">
       <!-- Товар 1 -->
       <div class="card text-center">
         <div class="card-header">Товар 1</div>
@@ -90,4 +98,13 @@
         <div class="card-body">
           <h3>$100</h3>
           <p>10 users included, 2 GB of storage,<br>Email support, Help center access</p>
-          <a href="#" class="btn btn-outline-primary">К
+          <a href="#" class="btn btn-outline-primary">Купить</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
