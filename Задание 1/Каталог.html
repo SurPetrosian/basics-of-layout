@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Каталог</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
   <style>
     .sidebar {
       height: 100vh;
@@ -12,7 +13,9 @@
     }
     .sidebar a {
       color: white;
-      display: block;
+      display: flex;
+      align-items: center;
+      gap: 10px;
       padding: 10px 15px;
       text-decoration: none;
     }
@@ -48,11 +51,11 @@
     <!-- Sidebar -->
     <nav class="col-md-2 sidebar d-flex flex-column justify-content-between">
       <div>
-        <h5 class="p-3">Меню</h5>
-        <a href="#" class="active">Главная</a>
-        <a href="#">Категории</a>
-        <a href="#">Заказы</a>
-        <a href="#">Контакты</a>
+        <h5 class="p-3"><i class="bi bi-bootstrap-fill me-2"></i>Меню</h5>
+        <a href="#" class="active"><i class="bi bi-house-door"></i> Главная</a>
+        <a href="#"><i class="bi bi-grid"></i> Категории</a>
+        <a href="#"><i class="bi bi-bag"></i> Заказы</a>
+        <a href="#"><i class="bi bi-telephone"></i> Контакты</a>
       </div>
 
       <!-- Пользователь с выпадающим меню -->
@@ -62,9 +65,9 @@
           <span>Пользователь</span>
         </a>
         <ul class="dropdown-menu dropdown-menu-dark">
-          <li><a class="dropdown-item" href="#">Профиль</a></li>
+          <li><a class="dropdown-item" href="#"><i class="bi bi-person"></i> Профиль</a></li>
           <li><hr class="dropdown-divider"></li>
-          <li><a class="dropdown-item" href="#">Выход</a></li>
+          <li><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-right"></i> Выход</a></li>
         </ul>
       </div>
     </nav>
@@ -82,8 +85,8 @@
                 <p class="card-text small">Описание карточки товара или услуги...</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div>
-                    <button class="btn btn-sm btn-outline-primary">View</button>
-                    <button class="btn btn-sm btn-outline-secondary">Edit</button>
+                    <button class="btn btn-sm btn-outline-primary"><i class="bi bi-eye"></i> View</button>
+                    <button class="btn btn-sm btn-outline-secondary"><i class="bi bi-pencil"></i> Edit</button>
                   </div>
                   <small class="text-muted">9 mins</small>
                 </div>
@@ -99,8 +102,8 @@
                 <p class="card-text small">Описание карточки товара или услуги...</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div>
-                    <button class="btn btn-sm btn-outline-primary">View</button>
-                    <button class="btn btn-sm btn-outline-secondary">Edit</button>
+                    <button class="btn btn-sm btn-outline-primary"><i class="bi bi-eye"></i> View</button>
+                    <button class="btn btn-sm btn-outline-secondary"><i class="bi bi-pencil"></i> Edit</button>
                   </div>
                   <small class="text-muted">12 mins</small>
                 </div>
@@ -116,8 +119,8 @@
                 <p class="card-text small">Описание карточки товара или услуги...</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div>
-                    <button class="btn btn-sm btn-outline-primary">View</button>
-                    <button class="btn btn-sm btn-outline-secondary">Edit</button>
+                    <button class="btn btn-sm btn-outline-primary"><i class="bi bi-eye"></i> View</button>
+                    <button class="btn btn-sm btn-outline-secondary"><i class="bi bi-pencil"></i> Edit</button>
                   </div>
                   <small class="text-muted">5 mins</small>
                 </div>
@@ -133,8 +136,8 @@
                 <p class="card-text small">Описание карточки товара или услуги...</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div>
-                    <button class="btn btn-sm btn-outline-primary">View</button>
-                    <button class="btn btn-sm btn-outline-secondary">Edit</button>
+                    <button class="btn btn-sm btn-outline-primary"><i class="bi bi-eye"></i> View</button>
+                    <button class="btn btn-sm btn-outline-secondary"><i class="bi bi-pencil"></i> Edit</button>
                   </div>
                   <small class="text-muted">20 mins</small>
                 </div>
