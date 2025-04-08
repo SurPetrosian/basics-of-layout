@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Контакты</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    .sidebar {
+      height: 100vh;
+      background-color: #343a40;
+      color: white;
+    }
+    .sidebar a {
+      color: white;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 15px;
+      text-decoration: none;
+    }
+    .sidebar a:hover,
+    .sidebar a.active {
+      background-color: #0d6efd;
+    }
+    .user-section {
+      padding: 10px 15px;
+    }
+    .user-avatar {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 10px;
+    }
+    .form-container {
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 30px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+    }
+  </style>
+</head>
+<body>
+
+<div class="container-fluid">
+  <div class="row">
+    <!-- Sidebar -->
+    <nav class="col-md-2 sidebar d-flex flex-column justify-content-between">
+      <div>
+        <h5 class="p-3"><i class="bi bi-bootstrap-fill me-2"></i>Меню</h5>
+        <a href="#"><i class="bi bi-house-door"></i> Главная</a>
+        <a href="#"><i class="bi bi-grid"></i> Категории</a>
+        <a href="#"><i class="bi bi-bag"></i> Заказы</a>
+        <a href="#" class="active"><i class="bi bi-telephone"></i> Контакты</a>
+      </div>
+      <div class="dropdown user-section">
+        <a class="d-flex align-items-center dropdown-toggle text-white text-decoration-none" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <img src="images/IMG_0182.JPG" alt="User" class="user-avatar">
+          <span>Пользователь</span>
+        </a>
+        <ul class="dropdown-menu dropdown-menu-dark">
+          <li><a class="dropdown-item" href="#"><i class="bi bi-person"></i> Профиль</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-right"></i> Выход</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Контент -->
+    <main class="col-md-10 p-5">
+      <h2 class="text-center mb-5">Контакты</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-5">
+          <div class="form-container">
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Имя</label>
+                <input type="text" class="form-control" id="name">
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Почта</label>
+                <div class="input-group">
+                  <span class="input-group-text">@</span>
+                  <input type="email" class="form-control" id="email">
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Сообщение</label>
+                <textarea class="form-control" id="message" rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Отправить</button>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <h5 class="fw-bold">Наши контакты</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p>
+          <p class="text-muted">While these feedback styles cannot be styled with CSS, you can still customize the feedback text through JavaScript.</p>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
